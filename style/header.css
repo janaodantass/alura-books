@@ -35,7 +35,11 @@
     display: block;
 }
 
-.lista-menu__titulo
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1rem;
+    background-color: var(--branco);
+}
 
 
 
