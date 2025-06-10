@@ -65,3 +65,12 @@
     padding-bottom: 5.5rem;
 }
 
+.titulo__mais-vendidos {
+    background-color: var(--branco);
+    color: var(--laranja);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem 0 0.5rem 0;
+}
+
