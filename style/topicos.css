@@ -14,10 +14,9 @@
 
 .item__linha {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    
 }
 
 .topico__item {
@@ -27,6 +26,23 @@
    text-decoration: none;
    font-size: 14px;
    font-weight: 700;
-   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .topicos__titulo {
+        font-size: 24px;
+    }
+
+    .topico__item {
+        font-size: 24px;
+    }
+
+    .item__linha {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 0 6rem;
+    }
+    
 }
 
