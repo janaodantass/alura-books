@@ -94,9 +94,35 @@
 
     <section class="segundo__carrossel">
         <h2 class="titulo__mais-vendidos">MAIS VENDIDOS</h2>
+        <!-- slider main container carrossel -->
+        <div class="swiper">
+            <!--Additional required wrapper carrossel-->
+            <!--If we need pagination carrossel-->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <!--Slides carrossel-->
+                <div class="swiper-slide"><img src="img/Construct2.svg" alt="livro sobre jogos da alura books"></div>
+                <div class="swiper-slide"><img src="img/Nodejs.svg" alt="livro sobre construção de apis da lura books"></div>
+                <div class="swiper-slide"><img src="img/UX.svg" alt="livro sobre ux estratégico da alura books"></div>
+                <div class="swiper-slide"><img src="img/Arquitetura.svg" alt="livro sobre arquitetura de software"></div>
+            </div>
+            <!--If we need navigation buttons carrossel-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </section>
-    
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
-    
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+    </script>
+
 </body>
 </html>
